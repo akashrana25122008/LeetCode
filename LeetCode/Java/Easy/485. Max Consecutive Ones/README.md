@@ -1,6 +1,6 @@
 # 📝 485. Max Consecutive Ones (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/max-consecutive-ones/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/max-consecutive-ones/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Array
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 3 ms
+- **Memory:** 52.5 MB
 
 ---
 
