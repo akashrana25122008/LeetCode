@@ -4,17 +4,18 @@ class Solution {
         Set<List<Integer>> st = new HashSet<>();
         for(int i =0;i<n;i++){
             for(int j =i+1;j<n;j++){
+                Set<Long> hashset = new HashSet<>();
                 for(int k=j+1;k<n;k++){
-                    for(int l= k+1;l<n;l++){
-                        long sum = nums[i] + nums[j];
-                        sum += nums[k];
-                        sum += nums[l];
-                        if(sum==target){
-                            List<Integer> temp = Arrays.asList(nums[i],nums[j],nums[k],nums[l]);
+                        long sum = (long) nums[i] + nums[j];
+                        sum += (long) nums[k];
+                        long fourth = (long) target-sum;
+                        if(hashset.contains(fourth)){
+                            List<Integer> temp = Arrays.asList(nums[i],nums[j],nums[k],(int)fourth);
                             Collections.sort(temp);
                             st.add(temp);
                         }
-                    }
+                        hashset.add((long) nums[k]);
+                    
                 }
             }
         }
